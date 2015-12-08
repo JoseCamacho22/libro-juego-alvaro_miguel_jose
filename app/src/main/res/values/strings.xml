@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dragon Ball Shadow</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_tittle">Ghuess the DagronBall Shadow</string>
+    <string name="menu_play">Play</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_url">URL</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_list">List Persons</string>
+    <string name="menu_video">Video</string>
+    <string name="button_text_accept">Accept</string>
+    <string name="answer">Do yo know this person?</string>
+    <string name="loser_text">Try again</string>
+    <string name="total_attemps">Attemps : </string>
+    <string name="text_toast_win">You win!!</string>
+    <string name="text_toast_lose">You Lose!!Try Again</string>
+
+     <string name="textView1">
+Goku ( Son Goku孫 悟空? ) Is the main character of the manga and anime Dragon Ball, a survivor of Planet Vegeta whose native name is Kakarotto , your name Saiyan , which he in turn comes from a corruption of the English "carrot " (carrot ) . 1.75 and weighs 62 kg .
+    </string>
+    <string name="textView2">
+    Krillin has 6 points on the forehead and the head (which implies wrongly that is bald ) is shaved . In Dragon Ball , Master Roshi gave him a suit like that which gave Goku , was an orange suit with a blue ribbon at the waist , this uses until the end of the Cell saga. Bring sneakers black. In the Buu saga stops shave their heads , so now it grows hair
+</string>
+    <string name="textView3">
+Goten is the youngest son of Son Goku, who was born a few months after his father died saving the world from Cell. It is incredibly strong , like a child , is much stronger than Goku or Gohan at the same age , but as it grows its power is attenuated to be weaker than Gohan when he was young , but stronger than Goku in the era of Dragon Ball .
+    </string>
+    <string name="textView4">
+        Gohan is the first son of Son Goku and named after the adoptive grandfather of his father. Gohan inherits many powers and sometimes even temporarily exceed his father. It is the first Saiyan / Human. In the saga of Cell Gohan shows much of its hidden power , but not all. To become final or Ultimate Gohan Gohan finishes the trigger . In Dragon Ball GT Gohan lose their physical condition and reduces its potential.
+    </string>
+    <string name="textView5">
+King Kaio Sama or North Kaio (北 の 界 王, Kita no Kaiō ) ; known in Spain as Kaito and initially as Kaiō Sama , is a character in Dragon Ball. It is the charge of governing the northern part of the galaxy and supervise the gods of the planets ( such as Kami Sama on Earth ) . Later it is discovered that there are three other Kaios , each responsible for its own cardinal point of the galaxy ..
+    </string>
+</resources>
