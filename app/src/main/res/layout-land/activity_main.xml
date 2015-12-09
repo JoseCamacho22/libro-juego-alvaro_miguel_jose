@@ -11,32 +11,28 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/menu_tittle"
         android:id="@+id/textView"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:textSize="25dp"
         android:textColor="#ffffff"
         android:textStyle="bold"
+        android:textIsSelectable="false"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="false"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:textIsSelectable="false" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="237dp"
-        android:layout_height="wrap_content"
+        android:layout_height="37dp"
         android:text="@string/menu_play"
         android:id="@+id/btnPlay"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="5dp"
         android:clickable="false"
-        android:onClick="onClick_play" />
+        android:onClick="onClick_play"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="237dp"
-        android:layout_height="wrap_content"
+        android:layout_height="37dp"
         android:text="@string/menu_url"
         android:id="@+id/btnAbout"
         android:layout_gravity="center_horizontal"
@@ -48,31 +44,28 @@
 
     <Button
         android:layout_width="237dp"
-        android:layout_height="wrap_content"
+        android:layout_height="37dp"
         android:text="@string/menu_list"
         android:id="@+id/btnList"
         android:layout_gravity="center_horizontal"
+        android:onClick="onClick_list"
         android:layout_below="@+id/btnPlay"
         android:layout_alignLeft="@+id/btnPlay"
-        android:layout_alignStart="@+id/btnPlay"
-        android:layout_marginBottom="5dp"
-        android:onClick="onClick_list" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_exit"
-        android:id="@+id/btnExit"
-        android:onClick="onClick_exit"
-        android:layout_below="@+id/button8"
-        android:layout_alignLeft="@+id/button8"
-        android:layout_alignStart="@+id/button8"
-        android:layout_alignRight="@+id/button8"
-        android:layout_alignEnd="@+id/button8" />
+        android:layout_alignStart="@+id/btnPlay" />
 
     <Button
         android:layout_width="237dp"
-        android:layout_height="wrap_content"
+        android:layout_height="37dp"
+        android:text="@string/menu_exit"
+        android:id="@+id/btnExit"
+        android:onClick="onClick_exit"
+        android:layout_below="@+id/button10"
+        android:layout_alignLeft="@+id/button10"
+        android:layout_alignStart="@+id/button10" />
+
+    <Button
+        android:layout_width="237dp"
+        android:layout_height="37dp"
         android:text="@string/menu_video"
         android:id="@+id/button"
         android:layout_gravity="center_horizontal"
@@ -83,7 +76,7 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="37dp"
         android:text="@string/menu_about"
         android:id="@+id/button2"
         android:layout_below="@+id/button"
@@ -94,15 +87,13 @@
         android:onClick="onClick_about" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="237dp"
+        android:layout_height="37dp"
         android:text="@string/menu_user"
-        android:id="@+id/button8"
+        android:id="@+id/button10"
         android:onClick="onClick_Form"
         android:layout_below="@+id/button2"
         android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:layout_alignStart="@+id/button2" />
 
 </RelativeLayout>

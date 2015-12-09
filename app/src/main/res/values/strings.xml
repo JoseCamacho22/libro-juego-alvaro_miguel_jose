@@ -10,6 +10,7 @@
     <string name="menu_exit">Exit</string>
     <string name="menu_list">List Persons</string>
     <string name="menu_video">Video</string>
+    <string name="menu_user">New User</string>
     <string name="button_text_accept">Accept</string>
     <string name="answer">Do yo know this person?</string>
     <string name="loser_text">Try again</string>
@@ -32,4 +33,10 @@ Goten is the youngest son of Son Goku, who was born a few months after his fathe
     <string name="textView5">
 King Kaio Sama or North Kaio (北 の 界 王, Kita no Kaiō ) ; known in Spain as Kaito and initially as Kaiō Sama , is a character in Dragon Ball. It is the charge of governing the northern part of the galaxy and supervise the gods of the planets ( such as Kami Sama on Earth ) . Later it is discovered that there are three other Kaios , each responsible for its own cardinal point of the galaxy ..
     </string>
+
+    <string name="TextViewForm">Please Introduced for name</string>
+    <string name="EditText"/>
+    <string name="btnForm">Accept</string>
+    <string name="tittle_about">Development by students 2ºDAM</string>
+    <string name="tittle_list">Persons</string>
 </resources>

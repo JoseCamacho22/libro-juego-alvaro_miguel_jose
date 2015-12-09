@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true">
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="190dp"
             android:id="@+id/miimagen"
             android:adjustViewBounds="true"
             android:layout_gravity="center_vertical"
@@ -27,8 +27,9 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/Botones"
         android:layout_alignParentBottom="true"
-        android:id="@+id/Botones">
+        android:layout_marginBottom="0dp">
 
         <LinearLayout
             android:orientation="horizontal"

@@ -11,7 +11,7 @@ public class MethodArray {
     private static ArrayList<DragonBall> listaDragonBall = new ArrayList<>(Arrays.asList(
             new DragonBall(0, "gohan", "gohan_sombra")
             , new DragonBall(1, "goku", "goku_sombra")
-            , new DragonBall(2, "gordo", "gordo_sombra")
+            , new DragonBall(2, "kaio", "kaio_sombra")
             , new DragonBall(3, "goten", "goten_sombra")
             , new DragonBall(4, "krilin", "krilin_sombra")
     ));

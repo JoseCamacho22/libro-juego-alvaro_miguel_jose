@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bola de dragon sombra</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="menu_tittle">Acierta la sombra de Dragon Ball</string>
+    <string name="menu_play">Jugar</string>
+    <string name="menu_about">Acerca de nosotros</string>
+    <string name="menu_url">URL</string>
+    <string name="menu_exit">Salir</string>
+    <string name="menu_list">Lista de personajes</string>
+    <string name="menu_user">Nuevo Usuario</string>
+    <string name="menu_video">Video</string>
+    <string name="button_text_accept">Aceptar</string>
+    <string name="answer">¿Conoces a este personaje?</string>
+    <string name="loser_text">Intentalo de nuevo</string>
+    <string name="total_attemps">Intentos : </string>
+    <string name="text_toast_win">Tu ganas!!</string>
+    <string name="text_toast_lose">Tu pierdes!!Intentelo de nuevo</string>
+    <string name="btn1">Nuevo Boton</string>
+    <string name="btn2">Nuevo Boton</string>
+    <string name="btn3">Nuevo Boton</string>
+    <string name="btn4">Nuevo Boton</string>
+     <string name="textView1">
+        Goku es el personaje principal de la Dragon Ball manga y el anime , un sobreviviente del planeta Vegeta cuyo nativa
+         nombre es Kakarotto , su nombre Saiyajin , que a su vez proviene de una corrupción de la "zanahoria"  en Inglés
+         . 1,75 y pesa 62 kg
+    </string>
+    <string name="textView2">
+   Krilin tiene 6 puntos en la frente y la cabeza ( lo que implica erróneamente que es calvo ) se afeita .
+        En Bola de dragon, el Maestro Roshi le dio un traje como el que dio a Goku, era un traje naranja con una cinta azul en
+        la cintura, este lo utiliza hasta el final de la saga Cell. Llevar zapatillas de deporte negro . En las proximas sagas le podra,
+        por  crecer el pelo
+</string>
+    <string name="textView3">
+    Goten es el hijo menor de Son Goku , que nació unos meses después de que su padre murió al salvar el mundo de  célula .
+        Es increíblemente fuerte , como un niño , es mucho más fuerte que Goku o Gohan a la misma edad ,
+        pero a medida que crece su poder se atenúa a ser más débil que Gohan cuando él era joven ,
+        pero más fuerte que Goku en la era de Dragon Ball .
+    </string>
+    <string name="textView4">
+        Gohan es el primer hijo de Son Goku y lleva el nombre del abuelo adoptivo de su padre .
+        Gohan hereda muchos poderes y supera incluso a veces temporalmente su padre. Es la primera Saiyan humano .
+        En la saga de Cell Gohan muestra gran parte de su poder oculto , pero no todos. Para llegar a ser definitivo.
+        En Dragon Ball GT Gohan pierde su condición física y reduce su potencial.
+    </string>
+    <string name="textView5">
+        Rey Kaio Sama o Norte Kaio , conocido en España como Kaito y en un principio como Kaiō Sama ,
+        es un personaje de bola de dragon ball . Es el encargado de gobernar el norte
+        parte de la galaxia y supervisar los dioses de los planetas (como Kami Sama en la Tierra) .
+        Más tarde se descubre que hay otros tres Kaios , cada uno responsable de su propio punto de la galaxia cardenal
+    </string>
+    <string name="TextViewForm">Por favor introduce nombre</string>
+    <string name="EditText"/>
+    <string name="btnForm">Aceptar</string>
+    <string name="tittle_about">Desarrollado por estudiantes de 2ºDAM</string>
+    <string name="tittle_list">Personajes</string>
+</resources>

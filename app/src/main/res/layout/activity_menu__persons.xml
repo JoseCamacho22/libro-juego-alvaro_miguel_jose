@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tomas.juego_pokemon.Menu_Personajes"
+    android:background="@drawable/fondo">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tittle_list"
+            android:id="@+id/textView5"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textColor="#020202" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="KRILLIN"
+            android:id="@+id/button3"
+            android:layout_marginTop="58dp"
+            android:textSize="20dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:allowUndo="false"
+            android:focusableInTouchMode="false"
+            android:shadowColor="#ffffff"
+            style="@style/buttonStyle"
+            android:layout_alignRight="@+id/button4"
+            android:layout_alignEnd="@+id/button4"
+            android:clickable="false"
+            android:onClick="onClick_krillin" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="GOKU"
+            android:id="@+id/button4"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/button3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            style="@style/buttonStyle"
+            android:onClick="onClick_goku" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="GOHAN"
+            android:id="@+id/button5"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/button4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            style="@style/buttonStyle"
+            android:onClick="onClick_gohan" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="GOTEN"
+            android:id="@+id/button6"
+            android:layout_below="@+id/button5"
+            android:layout_alignLeft="@+id/button4"
+            android:layout_alignStart="@+id/button4"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:background="@android:color/transparent"
+            style="@style/buttonStyle"
+            android:onClick="onClick_goten" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="KAIO DEL NORTE"
+            android:id="@+id/button7"
+            android:textSize="20dp"
+            android:background="@android:color/transparent"
+            style="@style/buttonStyle"
+            android:layout_below="@+id/imageButton4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp"
+            android:onClick="onClick_kaio" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/krilin"
+            android:layout_above="@+id/button4"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:layout_alignLeft="@+id/imageButton7"
+            android:layout_alignStart="@+id/imageButton7"
+            android:layout_alignRight="@+id/imageButton7"
+            android:layout_alignEnd="@+id/imageButton7"
+            android:onClick="onClick_krillin" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton7"
+            android:src="@drawable/goku"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:layout_alignBottom="@+id/button4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="44dp"
+            android:layout_marginEnd="44dp"
+            android:onClick="onClick_goku" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/gohan"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:layout_above="@+id/button6"
+            android:layout_alignLeft="@+id/imageButton7"
+            android:layout_alignStart="@+id/imageButton7"
+            android:onClick="onClick_gohan" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/goten"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:layout_alignTop="@+id/button6"
+            android:layout_alignLeft="@+id/imageButton3"
+            android:layout_alignStart="@+id/imageButton3"
+            android:onClick="onClick_goten" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton5"
+            android:src="@drawable/kaio"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:layout_alignBottom="@+id/button7"
+            android:layout_alignLeft="@+id/imageButton4"
+            android:layout_alignStart="@+id/imageButton4"
+            android:onClick="onClick_kaio" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

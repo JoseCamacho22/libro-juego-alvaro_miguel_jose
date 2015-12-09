@@ -8,13 +8,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/fondo"
-    tools:context=".Kaiodelnorte_Desc">
+    tools:context=".Krillin_Desc">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="KAIO DEL NORTE"
+        android:text="KRILLIN"
         android:id="@+id/textView"
         android:textSize="35dp"
         android:textColor="@android:color/black"
@@ -22,22 +22,21 @@
         android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/imageView"
-        android:src="@drawable/kaio"
+        android:src="@drawable/krilin"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/textView5"
+        android:text="@string/textView2"
         android:id="@+id/textView3"
         android:textSize="20dp"
         android:layout_below="@+id/imageView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

@@ -10,7 +10,7 @@ public class Menu_Personajes extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu__personajes);
+        setContentView(R.layout.activity_menu__persons);
     }
 
     public void onClick_gohan(View v) {

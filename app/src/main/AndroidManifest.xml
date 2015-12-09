@@ -23,7 +23,8 @@
         <activity android:name=".Desc_Krillin" />
         <activity android:name=".Desc_Kaiodelnorte" />
         <activity android:name=".Desc_Goten" />
-        <activity android:name=".Video"></activity>
+        <activity android:name=".Video" />
+        <activity android:name=".Formulario"></activity>
     </application>
 
 </manifest>
