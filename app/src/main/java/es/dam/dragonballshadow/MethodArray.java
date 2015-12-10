@@ -1,5 +1,7 @@
 package es.dam.dragonballshadow;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -7,44 +9,46 @@ import java.util.Arrays;
  * Created by Alvaro on 8/12/15.
  */
 public class MethodArray {
-    //Array con todos los personajes
+    private static final String TAG = "LOG_Android";
+
+    //Array with all persons
     private static ArrayList<DragonBall> listaDragonBall = new ArrayList<>(Arrays.asList(
-            new DragonBall(0, "gohan", "gohan_sombra")
-            , new DragonBall(1, "goku", "goku_sombra")
-            , new DragonBall(2, "kaio", "kaio_sombra")
-            , new DragonBall(3, "goten", "goten_sombra")
-            , new DragonBall(4, "krilin", "krilin_sombra")
+            new DragonBall(0, "gohan", "gohan_s")
+            , new DragonBall(1, "goku", "goku_s")
+            , new DragonBall(2, "kaio", "kaio_s")
+            , new DragonBall(3, "goten", "goten_s")
+            , new DragonBall(4, "krilin", "krilin_s")
     ));
 
     public static int NUMEROGENERADO =0;
 
-    //devuelve el nombre de la sombra, que coincide con el nombre de la imagen a color
-    //Muy importante que siempre coincida el String sombra con el nombre de la imagen que tenemos almacenada en drawable
-    public static String getNombre(int id)
+    //returns the name of the person color
+    public static String getName_array(int id)
     {
-        return listaDragonBall.get(id).getNombre().toLowerCase();
+        Log.d(TAG, "getName_array MethodArray");
+        return listaDragonBall.get(id).getName().toLowerCase();
     }
 
-    /*devuelve el nombre de la sombra, que coincide con el nombre de la imagen sombreada
-    Muy importante que siempre coincida el String sombra con el nombre de la imagen que tenemos almacenada en drawable*/
-
-    public static String getSombra(int id)
+    //returns the name of the person shadow
+    public static String getShadow_array(int id)
     {
-        return listaDragonBall.get(id).getSombra().toLowerCase();
+        Log.d(TAG, "getShadow_array MethodArray");
+        return listaDragonBall.get(id).getShadow().toLowerCase();
     }
 
-    //Devuelte el temaño de nuestra "base de datos-array"
-    public static int getTamaño()
+    //Returns de size of array
+    public static int getSize_array()
     {
+        Log.d(TAG, "getSize_array MethodArray");
         return listaDragonBall.size();
     }
 
-
-    /*Metodo para comprobar si el boton pulsado es el correcto.
-    Comprueba si el nombre del boton es igual al nombre del personaje*/
+    /*Method to check whether the pressed button is correct.
+    Check if the button name matches the name of the character*/
     public static boolean checkResult(String x)
     {
-        return listaDragonBall.get(NUMEROGENERADO).getNombre().equalsIgnoreCase(x);
+        Log.d(TAG, "chekcResult MethodArray");
+        return listaDragonBall.get(NUMEROGENERADO).getName().equalsIgnoreCase(x);
     }
 
 }

@@ -1,42 +1,43 @@
 package es.dam.dragonballshadow;
 
+import android.util.Log;
+
 /**
- * Created by Alvaro on 8/12/15.
+ * Created by Alvaro Roizo, Miguel Angel Garcia y Jose Camacho.
+ *
+ * Class to management object DragonBall
  */
 public class DragonBall {
+    private static final String TAG = "LOG_Android";
 
     private int id;
-    private String nombre;
+    private String name;
     private String sombra;
 
-    public DragonBall(int id, String nombre, String sombra) {
+    public DragonBall(int id, String name, String shadow) {
         this.id=id;
-        this.nombre=nombre;
-        this.sombra=sombra;
+        this.name =name;
+        this.sombra=shadow;
     }
 
     public int getId() {
+        Log.d(TAG, "method getId");
         return id;
     }
 
     public void setId(int id) {
+        Log.d(TAG, "method setId");
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        Log.d(TAG, "method getName_array");
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getSombra() {
+    public String getShadow() {
+        Log.d(TAG, "method getShadow_array");
         return sombra;
-    }
-
-    public void setSombra(String sombra) {
-        this.sombra = sombra;
     }
 
 }

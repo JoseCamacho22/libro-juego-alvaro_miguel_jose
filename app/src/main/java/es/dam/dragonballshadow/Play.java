@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -13,27 +14,28 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class Play extends AppCompatActivity {
+    private static final String TAG = "LOG_Android";
 
-    //imagen personaje
+    // character image
     ImageView img;
 
-    //Musica de fondo
+    //Background music
     private MediaPlayer sound;
 
-    //Tiempo espera entre personajes
+    // Timeout between characters
     private final int TIME = 3000;
 
-    //botones resultado
+    // buttons result
     private Button btn1, btn2, btn3, btn4;
 
-    //Variable para generar imagen random
+    // Variable to generate random image
     int id_random_ok;
     ArrayList<Integer> array_num;
 
-    //Variable para que no se repita el personaje uno detras de otro
+    // Variable for the character not repeat one after another
     int prev_random =-1;
 
-    //boolean guardar estado botones
+    // boolean state save buttons
     boolean btn1_visible=true;
     boolean btn2_visible=true;
     boolean btn3_visible=true;
@@ -50,6 +52,7 @@ public class Play extends AppCompatActivity {
         sound.setLooping(true);
         sound.start();
         generateRandomImage();
+        Log.d(TAG, "onCreate Play");
     }
 
     @Override
@@ -63,7 +66,6 @@ public class Play extends AppCompatActivity {
         savedInstanceState.putBoolean("BTN4", btn4_visible);
     }
 
-    //Restauramos la instancia anterior
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState){
         super.onRestoreInstanceState(savedInstanceState);
@@ -77,10 +79,10 @@ public class Play extends AppCompatActivity {
         prev_random = id_random_ok;
         setShadow(id_random_ok);
         //set_status_btn(true);
-        btn1.setText(MethodArray.getNombre(array_num.get(0)));
-        btn2.setText(MethodArray.getNombre(array_num.get(1)));
-        btn3.setText(MethodArray.getNombre(array_num.get(2)));
-        btn4.setText(MethodArray.getNombre(array_num.get(3)));
+        btn1.setText(MethodArray.getName_array(array_num.get(0)));
+        btn2.setText(MethodArray.getName_array(array_num.get(1)));
+        btn3.setText(MethodArray.getName_array(array_num.get(2)));
+        btn4.setText(MethodArray.getName_array(array_num.get(3)));
 
         if(btn1_visible==false){
             btn1.setVisibility(View.INVISIBLE);
@@ -101,11 +103,13 @@ public class Play extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         sound.pause();
+        Log.d(TAG, "onStop Play");
     }
     @Override
     protected void onResume() {
         super.onResume();
         sound.start();
+        Log.d(TAG, "onResume Play");
     }
 
     @Override
@@ -114,6 +118,7 @@ public class Play extends AppCompatActivity {
             sound.stop();
             sound.release();
         }
+        Log.d(TAG, "onDestroy Play");
         super.onDestroy();
     }
 
@@ -121,34 +126,50 @@ public class Play extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         sound.pause();
+        Log.d(TAG, "onPause Play");
     }
 
-    //Inicialización de componenten utilizados en esta actividad.
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart Play");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onRestart Play");
+    }
+
+
+    // Initialization components used in this activity.
     private void startComponents() {
         img = (ImageView) findViewById(R.id.miimagen);
         btn1 = (Button) findViewById(R.id.btn1);
         btn2 = (Button) findViewById(R.id.btn2);
         btn3 = (Button) findViewById(R.id.btn3);
         btn4 = (Button) findViewById(R.id.btn4);
+        Log.d(TAG, "startComponents Play");
     }
 
-    //Insertar sombra al imageview
+    // Insert shadow imageview
     public void setShadow(int id) {
-        int resId = getResources().getIdentifier(MethodArray.getSombra(id), "drawable", getPackageName());
+        int resId = getResources().getIdentifier(MethodArray.getShadow_array(id), "drawable", getPackageName());
         img.setImageResource(resId);
+        Log.d(TAG, "setShadow Play");
     }
 
-    //Insertar imagen a color en el imageview
+    // Insert color image in imageview
     public void setColor(int id) {
-        int resId = getResources().getIdentifier(MethodArray.getNombre(id), "drawable", getPackageName());
+        int resId = getResources().getIdentifier(MethodArray.getName_array(id), "drawable", getPackageName());
         img.setImageResource(resId);
+        Log.d(TAG, "setColor Play");
     }
 
 
-    /*Comprobacion del resultado
-    * Compara el nombre del boton con el nombre del personaje
-    * */
-
+    /* Check the results
+    Compare the button name with the name of the character
+    */
     public void onClick_btn1(View v) {
         Button boton = (Button) v;
         String namePerson = boton.getText().toString().toLowerCase();
@@ -164,8 +185,12 @@ public class Play extends AppCompatActivity {
             v.setVisibility(View.INVISIBLE);
             btn1_visible=false;
         }
+        Log.d(TAG, "onClick_btn1 Play");
     }
 
+    /* Check the results
+    Compare the button name with the name of the character
+    */
     public void onClick_btn2(View v) {
         Button boton = (Button) v;
         String namePerson = boton.getText().toString().toLowerCase();
@@ -181,8 +206,12 @@ public class Play extends AppCompatActivity {
             v.setVisibility(View.INVISIBLE);
             btn2_visible=false;
         }
+        Log.d(TAG, "onClick_btn2 Play");
     }
 
+    /* Check the results
+    Compare the button name with the name of the character
+    */
     public void onClick_btn3(View v) {
         Button boton = (Button) v;
         String namePerson = boton.getText().toString().toLowerCase();
@@ -198,8 +227,12 @@ public class Play extends AppCompatActivity {
             v.setVisibility(View.INVISIBLE);
             btn3_visible=false;
         }
+        Log.d(TAG, "onClick_btn3 Play");
     }
 
+    /* Check the results
+    Compare the button name with the name of the character
+    */
     public void onClick_btn4(View v) {
         Button boton = (Button) v;
         String namePerson = boton.getText().toString().toLowerCase();
@@ -215,8 +248,10 @@ public class Play extends AppCompatActivity {
             v.setVisibility(View.INVISIBLE);
             btn4_visible=false;
         }
+        Log.d(TAG, "onClick_btn4 Play");
     }
 
+    //Timeout between characters
     public void wait_time() {
         new CountDownTimer(TIME, 1000) {
             @Override
@@ -225,13 +260,15 @@ public class Play extends AppCompatActivity {
 
             @Override
             public void onFinish() {
+                Log.d(TAG, "finish time_wait Play");
                 generateRandomImage();
             }
         }.start();
     }
 
-    //SI true todos los potones estan activos y visibles
-    //Si false todos los botones invisible
+
+    /* If true, all are active and visible potones
+    If false all the invisible buttons */
     public void set_status_btn(boolean valor) {
         if (valor) {
             btn1.setVisibility(View.VISIBLE);
@@ -246,7 +283,7 @@ public class Play extends AppCompatActivity {
             btn2_visible=true;
             btn3_visible=true;
             btn4_visible=true;
-
+            Log.d(TAG, "set_status_btn true Play");
 
         } else {
             btn1.setVisibility(View.INVISIBLE);
@@ -257,10 +294,12 @@ public class Play extends AppCompatActivity {
             btn2_visible=false;
             btn3_visible=false;
             btn4_visible=false;
+            Log.d(TAG, "set_status_btn false Play");
         }
     }
-    /*Metodo para generar 4 numeros aleatorios dentro del rango de nuestros id de personajes.
-    Con estos 4 numeros aleatorios daremos valor a nuestra imagen y nuestros botones de selección*/
+
+    /* Method for generating random numbers within the range of our character id .
+    With these 4 random numbers give value to our image and our selection buttons */
     public void generateRandomImage() {
         int num;
         int cont = 0;
@@ -268,7 +307,7 @@ public class Play extends AppCompatActivity {
         id_random_ok = -1;
         array_num = new ArrayList<>();
         do {
-            num = ((int) (Math.random() * MethodArray.getTamaño()));
+            num = ((int) (Math.random() * MethodArray.getSize_array()));
             if (id_random_ok <= 0) {
                 id_random_ok = num;
                 cont++;
@@ -280,25 +319,26 @@ public class Play extends AppCompatActivity {
             }
         } while (cont < 4);
         setRandomImage(id_random_ok,array_num);
+        Log.d(TAG, "generateRandomImage Play");
     }
 
-    //Cambia los botones y la imagen
+    //Change the buttons and image
     public void setRandomImage(int id_random,ArrayList<Integer> array){
-        //Condicion para que el personaje no se repita uno detras de otro
+        // Condition for the character repeats one after another
         if(id_random != prev_random) {
             MethodArray.NUMEROGENERADO = id_random;
             prev_random = id_random;
-            setShadow(id_random);//Ponemos la sombra
-            set_status_btn(true);//Todos los botones visibles
+            setShadow(id_random);
+            set_status_btn(true);
 
-            //Damos texto a los botones con el array de numeros aleatorios
-            btn1.setText(MethodArray.getNombre(array.get(0)));
-            btn2.setText(MethodArray.getNombre(array.get(1)));
-            btn3.setText(MethodArray.getNombre(array.get(2)));
-            btn4.setText(MethodArray.getNombre(array.get(3)));
+            btn1.setText(MethodArray.getName_array(array.get(0)));
+            btn2.setText(MethodArray.getName_array(array.get(1)));
+            btn3.setText(MethodArray.getName_array(array.get(2)));
+            btn4.setText(MethodArray.getName_array(array.get(3)));
         }
         else{
             generateRandomImage();
         }
+        Log.d(TAG, "setRandomeImage Play");
     }
 }
