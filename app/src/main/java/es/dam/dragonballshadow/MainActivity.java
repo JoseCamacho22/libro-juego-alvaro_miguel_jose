@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
             if(resultCode==RESULT_OK){
                 try {
                     String name=data.getData().toString();
-                    Toast.makeText(this, name, Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "New user "+name, Toast.LENGTH_LONG).show();
                 }catch (Exception e){
                     Toast.makeText(this,"Exception",Toast.LENGTH_LONG).show();
                 }
